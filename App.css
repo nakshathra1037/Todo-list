@@ -1,0 +1,136 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+:root{
+  --primary:pink;
+}
+
+body{
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#root{
+  min-height: 100vh;
+  width: 100vw;
+  background: var(--primary);
+}
+
+section{
+  min-height: 100vh;
+  width: 100vw;
+  padding: 30px;
+  background:white;
+}
+
+.todo{
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.todo>.part1{
+  min-height: 80vh;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.todo>.part2{
+  min-height: 80vh;
+  width: 65%;
+  padding: 20px;
+}
+
+.part1>form{
+  width: 75%;
+  min-height: 70vh;
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(168, 94, 155);
+  box-shadow: 0 0 10px black;
+}
+
+.todo-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  box-shadow: 0 0 10px black;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgb(168, 94, 155);
+}
+
+.todo-container>.item{
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(238, 150, 238);
+  gap: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px black;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.part1>form>h1{
+  margin-bottom: 20px;
+}
+
+.part1>form>input{
+  width: 90%;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.part1>form>textarea{
+  width: 90%;
+  height: 200px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.part1>form>button{
+  height: 30px;
+  width: 70%;
+  border-radius: 30px;
+  background-color: rgb(127, 18, 127);
+  color: white;
+  border: none;
+}
+
+.action{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.action button{
+  background: white;
+  border: none;
+  padding: 6px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.action button i{
+  font-size: 16px;
+}
+.todo-container>.item:hover{
+  transform: scale(1.02);
+  box-shadow: 0 12px 30px black;
+  cursor: pointer;
+}
+
